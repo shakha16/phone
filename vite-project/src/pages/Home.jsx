@@ -1,5 +1,6 @@
 import React from "react";
 import like from '../img/like.svg'
+import bask from '../img/bask.svg'
 
 export default function Home(props) {
     return (
@@ -12,7 +13,7 @@ export default function Home(props) {
                         <span className="absolute left-0 bottom-0 text-xs text-white bg-indigo-400 rounded p-1">Чилля Базар</span>
                         <img className="absolute right-2 top-2" src={like} alt="" />
                     </div>
-                    <div>
+                    <div className="relative">
                         <div className="p-2 flex flex-col justify-between gap-1">
                             <h3>{props.item.name}</h3>
                             <div className="flex items-center gap-2">
@@ -22,6 +23,9 @@ export default function Home(props) {
                             <h3 className="w-[100px] bg-yellow-300 rounded p-1 text-sm">{props.item.month}</h3>
                             <s className="text-[11px] pt-2">{props.item.sale}</s>
                             <h3 className="text-base">{props.item.promotion}</h3>
+                            <div className="w-8 h-8 rounded-full border-2 border-black flex items-center justify-center absolute bottom-2 right-2">
+                                <img src={bask} alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
