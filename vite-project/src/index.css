@@ -45,3 +45,7 @@
     background-color: #6e00ff;
     color: #fff;
 }
+
+body::-webkit-scrollbar{
+    width: 0;
+}
