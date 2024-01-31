@@ -41,7 +41,6 @@ export default function Home() {
                         <Phone key={item.id} {...item} />
                     ))
                 }
-                dcsecec
             </div>
         </div>
     )
